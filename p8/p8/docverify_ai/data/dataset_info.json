@@ -1,0 +1,26 @@
+{
+  "description": "Synthetic dataset for DocVerify AI development and testing.",
+  "warning": "These are programmatically generated feature vectors, NOT real documents.",
+  "n_genuine": 60,
+  "n_manipulated": 40,
+  "seed": 42,
+  "features": [
+    "text_density",
+    "font_variance",
+    "font_size_variance",
+    "alignment_variance",
+    "number_of_fonts",
+    "image_noise_variance",
+    "compression_difference",
+    "metadata_anomaly",
+    "date_format_variance",
+    "total_mismatch",
+    "ocr_confidence",
+    "suspicious_region_count"
+  ],
+  "labels": [
+    "genuine",
+    "manipulated"
+  ],
+  "creation_method": "Genuine samples: low anomaly feature values. Manipulated samples: genuine base with controlled perturbations to specific features (total mismatch, ELA, font, noise, metadata)."
+}
